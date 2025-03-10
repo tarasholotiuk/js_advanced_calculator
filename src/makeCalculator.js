@@ -7,32 +7,32 @@ function makeCalculator() {
   let res = 0;
 
   return {
-    add: (num) => {
+    add(num) {
       res += num;
 
       return res;
     },
-    subtract: (num) => {
+    subtract(num) {
       res -= num;
 
       return res;
     },
-    multiply: (num) => {
+    multiply(num) {
       res *= num;
 
       return res;
     },
-    divide: (num) => {
+    divide(num) {
       res /= num;
 
       return res;
     },
-    reset: function () {
+    reset() {
       res = 0;
 
       return this;
     },
-    operate: function (operation, num) {
+    operate(operation, num) {
       res = operation(num);
 
       return this;
